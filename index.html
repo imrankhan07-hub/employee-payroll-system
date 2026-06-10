@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Payroll System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- TOP NAVIGATION BAR -->
+<nav class="navbar navbar-dark bg-dark px-4">
+  <span class="navbar-brand fw-bold">💼 Payroll System</span>
+  <a href="add.html" class="btn btn-warning btn-sm">
+    + Add Employee
+  </a>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- STATS CARDS -- filled by JS -->
+  <div class="row mb-4" id="statsRow"></div>
+
+  <!-- SEARCH + FILTER -->
+  <div class="d-flex gap-2 mb-3">
+    <input id="searchBox"
+           class="form-control"
+           placeholder="Search by name..."
+           onkeyup="searchEmployees()"/>
+    <select id="deptFilter"
+            class="form-select"
+            style="width:180px"
+            onchange="filterByDept()">
+      <option value="">All Departments</option>
+      <option>IT</option>
+      <option>HR</option>
+      <option>Finance</option>
+      <option>Operations</option>
+    </select>
+  </div>
+
+  <!-- EMPLOYEE TABLE -->
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+        <th>Basic Salary</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <!-- app.js fills this automatically -->
+    <tbody id="empTable"></tbody>
+  </table>
+
+</div>
+
+<script src="app.js"></script>
+</body></html>
