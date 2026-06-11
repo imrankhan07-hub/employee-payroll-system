@@ -1,0 +1,36 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.table thead {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.btn-warning {
+  font-weight: 700;
+}
+
+.stat-card {
+  border-radius: 10px;
+  padding: 16px;
+  color: white;
+}
+
+.badge-dept {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
